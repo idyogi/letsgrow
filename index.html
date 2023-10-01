@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: tahoma;
+            text-align: center;
+        }
+
+        header {
+            letter-spacing: 6px;
+            background: royalblue;
+            padding: 20px;
+            color: white;
+        }
+
+        h2,
+        h3 {
+            font-size: 2em;
+            width: 100%;
+        }
+
+        section {
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            background-color: ivory;
+            margin: 25px;
+            padding: 25px;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3)
+        }
+
+        .icons {
+            font-size: 8em;
+            padding: 25px;
+        }
+
+
+        .button,
+        .container {
+            margin: 10px;
+        }
+
+        button,
+        .button {
+            background: royalblue;
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .blue {
+            background: teal;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 10px;
+
+        }
+
+        @media screen and (min-width: 50em) {
+            .card {
+                flex-basis: 325px;
+            }
+
+            header h1 {
+                font-size: 5em;
+            }
+        }
+
+        @media only screen and (min-width: 50em) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LetsGrow.MY.ID</h1>
+        <h4>
+            SKILL UP, GROW UP
+        </h4>
+
+    </header>
+    <section>
+        <h3>
+            Selamat Datang
+        </h3>
+        <p>
+            Temukan potensi baru dan berkaryalah bersama Let’s Grow
+        </p>
+        <br>
+        <br>
+        <p>ABOUT US: Let’s grow, sebuah komunitas pemuda di Yogyakarta yang ingin tumbuh bersama dan bisa berdampak
+            besar untuk masyarakat luas.</p>
+
+
+    </section>
+    <section class="blue container">
+        <h3>
+            SERVICES://
+        </h3>
+        <article class="card">
+            <div class="icons"> &#10084;
+            </div>
+            <h3>Kelas HTML CSS</h3>
+            <p>Wajib banget ini.</p>
+            <button> Daftar </button>
+
+        </article>
+
+        <article class="card">
+            <div class="icons"> &#10084;
+            </div>
+            <h3>Kelas Java Script</h3>
+            <p>Mulai lebih interaktif.</p>
+            <button> Daftar </button>
+
+        </article>
+        <article class="card">
+            <div class="icons"> &#10084;
+            </div>
+            <h3>Kelas PHP & Database</h3>
+            <p>Sistemasi dan olah data kalian</p>
+            <button> Daftar </button>
+        </article>
+        <article class="card">
+            <div class="icons"> &#10084;
+            </div>
+            <h3>Laravel</h3>
+            <p>Buat program lebih cepat dan aman</p>
+            <button> Daftar </button>
+        </article>
+        <article class="card">
+            <div class="icons"> &#10084;
+            </div>
+            <h3>Flutter</h3>
+            <p>Siap membuat aplikasi Android dan IOS</p>
+            <button> Daftar </button>
+        </article>
+
+    </section>
+
+    <section>
+        <h3>Formulir Daftar</h3>
+        <table>
+            <tr>
+                <td>Nama:</td>
+                <td>
+                    <input type="text" size="25" name="namaku">
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td>
+                    <input type="text" size="25" name="alamatku">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select name="gender">
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Umur:</td>
+                <td>
+                    <input type="number" value="20" min="17" max="68" name="umurku">
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="2">
+                    <button class="button">Daftar</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="button" type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
